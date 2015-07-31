@@ -146,6 +146,7 @@ function indieSocial() {
   var title = init.getAttribute("data-title");
   var fontelloIcon = init.getAttribute("data-addFontelloIcon");
   var addText = init.getAttribute("data-addText");
+  var prependServices = init.getAttribute("data-prependServices");
 
   if (initServices[0] === "all") {
     for (var serv in services) {
@@ -184,10 +185,14 @@ function indieSocial() {
       var innerValue = innerValue + '<i class="icon-' + services[service]['fontello'] + '"></i>';
     }
     if (addText == "true") {
-      var innerValue = innerValue + services[service]['name'];
+      var innerValue = innerValue + '<span>' + services[service]['name'] + '</span>';
     }
 
     aElement.innerHTML = innerValue;
-    init.appendChild(aElement);
+
+    if ( prependServices == "true" )
+      init.insertAdjacentHTML( 'afterbegin', aElement );
+    else
+      init.appendChild(aElement);
   }
 }
