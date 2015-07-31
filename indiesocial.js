@@ -1,6 +1,6 @@
 /* IndieSocial
 JavaScript library which provide social sharing links without foreign scripts
-License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/ 
+License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
 Repo: https://github.com/komachi/indiesocial */
 var services = {
   'facebook': {
@@ -124,7 +124,7 @@ function indieSocial() {
 
   var init = document.getElementById("indiesocial-init");
   if (!init) { // if no container was created kill execution
-    return; 
+    return;
   }
 
   var initServices = init.getAttribute("data-indieSocialServices");
