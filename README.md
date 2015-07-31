@@ -26,7 +26,7 @@ You can also install IndieSocial with [bower](http://bower.io)...
 3. Add text to share links: data-addText Possible values: true or false. Default: false.
 4. Set URL for share: data-URL. Default: window.location.
 5. Set title: data-title. Not work with Google+, use [OpenGraph](http://ogp.me/).
-5. Prepend social share links: prependServices. Possible values: true or false. Default: false.
+5. Prepend social share links: data-prependServices. Possible values: true or false. Default: false.
 
 ## Supported services
 1. Facebook
