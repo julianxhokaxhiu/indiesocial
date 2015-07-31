@@ -147,11 +147,14 @@ function indieSocial() {
   var fontelloIcon = init.getAttribute("data-addFontelloIcon");
   var addText = init.getAttribute("data-addText");
   var prependServices = init.getAttribute("data-prependServices");
+  var prependContainer = document.createDocumentFragment();
 
   if (initServices[0] === "all") {
     for (var serv in services) {
       createElementService(serv);
     }
+    if ( prependServices == "true" )
+      init.insertBefore(prependContainer, init.firstChild);
   } else {
     for (var i = 0, len = initServices.length; i < len; i++) {
       var serv = initServices[i];
@@ -159,6 +162,8 @@ function indieSocial() {
         createElementService(serv);
       }
     }
+    if ( prependServices == "true" )
+      init.insertBefore(prependContainer, init.firstChild);
   }
 
   function createElementService(service) {
@@ -191,7 +196,7 @@ function indieSocial() {
     aElement.innerHTML = innerValue;
 
     if ( prependServices == "true" )
-      init.insertAdjacentHTML( 'afterbegin', aElement );
+      prependContainer.appendChild(aElement);
     else
       init.appendChild(aElement);
   }
