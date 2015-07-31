@@ -1,7 +1,7 @@
 {
-  "name": "IndieSocial",
+  "name": "IndieSocial-Reloaded",
   "main": "indiesocial.js",
-  "homepage": "https://nesterov.pw/indiesocial",
+  "homepage": "https://github.com/julianxhokaxhiu/indiesocial-reloaded",
   "description": "JavaScript library which let you use social share links without foreign scripts. Control all your data, protect your privacy.",
   "keywords": [
     "social",
@@ -28,7 +28,8 @@
     "hackernews"
   ],
   "authors": [
-    "Anton Nesterov"
+    "Anton Nesterov",
+    "Julian Xhokaxhiu"
   ],
   "license": "CC0"
 }

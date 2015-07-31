@@ -1,7 +1,7 @@
-/* IndieSocial
+/* IndieSocial-Reloaded
 JavaScript library which provide social sharing links without foreign scripts
 License: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
-Repo: https://github.com/komachi/indiesocial */
+Repo: https://github.com/julianxhokaxhiu/indiesocial-reloaded */
 var services = {
   'facebook': {
     'URL': 'https://facebook.com/sharer.php?u=',
